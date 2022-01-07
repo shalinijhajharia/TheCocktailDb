@@ -74,7 +74,7 @@ const Login = () => {
              </div><br/>
              <div >
                {/* <img src="../image/pass.png" alt="pass" className="pass"/> */}
-               <input type={state?"text":"password"} id="pass" placeholder="Password" className="name"/>
+               <input type={state?"text":"password"} id="pass" onChange={e=>setPassword(e.target.value)}  placeholder="Password" className="name"/>
                <button className="hidebtn" onClick={toggleBtn}>
                 {
                   state? <AiOutlineEye/>:<AiOutlineEyeInvisible/>
