@@ -47,7 +47,7 @@ const Register = () => {
         setAnswer('');
 
         alert(username+'registered successfully');
-        window.open('/theCocktaildb/login/'+id,'_self')
+        window.open('/theCocktaildb/#/login/'+id,'_self')
 				
 			}else{
 				alert(username+' exist!');
