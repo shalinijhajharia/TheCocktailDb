@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 // import pages
 import Home from './pages/Home';
 import About from './pages/About';
@@ -28,9 +28,9 @@ function App() {
   }
   
   return (
-      <Routes>
+      <Router>
         <Navbar/>
-        
+        <Switch>
           <Route exact path="/">
             <Home/>
           </Route>
@@ -61,8 +61,8 @@ function App() {
           <Route path="*">
             <Error/>
           </Route>
-        
-      </Routes>
+        </Switch>
+      </Router>
    
     
   );

@@ -44,7 +44,7 @@ const Login = () => {
 				setUsername('');
 				setPassword('');
       // console.log(id);
-         window.open('/Cocktail/'+id,'_self')
+         window.open('/theCocktaildb/Cocktail/'+id,'_self')
        
       
 			}
